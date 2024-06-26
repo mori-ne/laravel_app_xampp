@@ -17,7 +17,6 @@ class Organizer extends Model
         'email'
     ];
 
-
     protected $table = 'organizers';
 
     public function getData()

@@ -13,7 +13,10 @@ Route::get('/', function () {
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard', [OrganizeController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
-
+Route::get('/dashboard/show/{userId}', [OrganizeController::class, 'show']);
+Route::get('/dashboard/edit/{userId}', [OrganizeController::class, 'edit']);
+Route::put('/dashboard', [OrganizeController::class, 'update']);
+Route::delete('/dashboard', [OrganizeController::class, 'delete']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
