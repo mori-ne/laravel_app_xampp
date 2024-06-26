@@ -11,7 +11,9 @@ MAMP or XAMPPの場合
 
 
 
-2. .envのdb情報を書き換える
+2. .envのdb情報を書き換える  
+	XAMP default port:80 mysql:3306  
+	MAMP default port:8888 mysql:8889  
 	~~~
 	DB_CONNECTION=mysql
 	DB_HOST=127.0.0.1
