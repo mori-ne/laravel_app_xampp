@@ -13,6 +13,6 @@ class OrganizersSeeder extends Seeder
      */
     public function run(): void
     {
-        Organizer::factory()->count(50)->create();
+        Organizer::factory()->count(100)->create();
     }
 }
