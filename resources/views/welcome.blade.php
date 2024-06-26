@@ -906,6 +906,7 @@
     <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
         <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
             <header>
+                <h5 class="text-center font-bold py-5">Proofsheet</h5>
                 @if (Route::has('login'))
                 <nav class="-mx-3 flex flex-1 justify-center">
                     @auth
