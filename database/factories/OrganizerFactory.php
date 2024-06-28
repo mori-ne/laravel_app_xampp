@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Organizer;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Organizer;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Organizer>
