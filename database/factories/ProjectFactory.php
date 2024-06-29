@@ -8,14 +8,14 @@ use App\Models\Project;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
-class ProjectsFactory extends Factory
+class ProjectFactory extends Factory
 {
     protected $model = Project::class;
 
     public function definition(): array
     {
         return [
-            'project_name' => $this->faker->streetName() . 'プロジェクト',
+            'project_name' => $this->faker->unique()->streetName() . 'プロジェクト',
             'project_description' => $this->faker->realText(),
             'project_author' => $this->faker->name(),
         ];

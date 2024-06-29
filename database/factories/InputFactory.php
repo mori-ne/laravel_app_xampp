@@ -8,7 +8,7 @@ use App\Models\Input;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
-class InputsFactory extends Factory
+class InputFactory extends Factory
 {
     protected $model = Input::class;
 
@@ -17,7 +17,6 @@ class InputsFactory extends Factory
         return [
             'input_name' => $this->faker->realText(10),
             'type' => $this->faker->unixTime(),
-            'project_author' => $this->faker->name(),
         ];
     }
 }

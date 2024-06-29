@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('input_name', 100)->comment('インプット名');
             $table->string('type', 30)->comment('タイプ：input属性');
-            $table->string('form_id', 8)->comment('フォームID FK');
+            $table->string('form_id', 8)->nullable()->comment('フォームID FK');
             $table->timestamps();
         });
     }

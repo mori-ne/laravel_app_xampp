@@ -9,6 +9,8 @@ class Input extends Model
 {
     use HasFactory;
 
+    protected $table = 'inputs';
+
     protected $fillable = [
         'form_name',
         'type',

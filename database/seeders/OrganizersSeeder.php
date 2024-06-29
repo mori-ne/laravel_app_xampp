@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Organizer;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Organizer;
 
 class OrganizersSeeder extends Seeder
 {

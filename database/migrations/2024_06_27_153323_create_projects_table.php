@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('prejects', function (Blueprint $table) {
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('project_name', 255)->comment('プロジェクト名')->unique();
             $table->text('project_description')->nullable()->default(null)->comment('プロジェクトの説明');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('prejects');
+        Schema::dropIfExists('projects');
     }
 };

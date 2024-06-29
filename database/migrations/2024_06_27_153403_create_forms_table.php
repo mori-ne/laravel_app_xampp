@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('form_name', 100)->comment('フォーム名');
             $table->smallInteger('status')->default(0)->comment('0:非公開, 1:公開');
-            $table->string('project_id', 30)->comment('プロジェクトID FK');
+            $table->string('project_id', 30)->nullable()->comment('プロジェクトID FK');
             $table->timestamps();
         });
     }
